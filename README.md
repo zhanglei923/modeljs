@@ -1,6 +1,7 @@
 # modeljs
 
-当前的mvvm框架都跟html层紧耦合，这种特性注定了它们无法以开放的姿态包容目前丰富的控件库。modeljs尝试以另外一种思路解决这个问题。
+当前的mvvm框架虽然解决了vm到view的实时更新，但跟html紧耦合的特性注定了它们无法包容互联网上种类丰富的控件库。
+modeljs尝试以另外一种思路解决这个问题。
 
 ```javascript
 var vm = new absVm({
