@@ -17,10 +17,19 @@ var vm = new absVm({
 		return this.salary * 12;
 	}
 });
+//设置初始化数据json
 vm.set(dataJson);
+//获取数据json
 vm.get()//dataJson
+//监听某字段的变化
 vm.watch('list.childName', function (newVal, oldVal){
 	
-})
+});
+//设置某字段的名称
 vm.set('name', newValue);
+vm.set('list[1].childName', newValue);
+vm.set('list[1]', {childName: 'child3', childAge: 3});
+//实时渲染到某区域
+vm.render('#contaner');
+vm.render('list', #contaner .grid', '<ul>{{each list}}{{/each}}</ul>');
 ```
